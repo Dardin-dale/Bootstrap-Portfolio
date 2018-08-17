@@ -1,0 +1,72 @@
+body {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  position: relative;
+  background-image: url('../images/light-grey-terrazzo.png');
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  color: #666666;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+nav {
+  height: 50px;
+}
+
+
+footer {
+  width: 100%;
+  height: 50px;
+  color: #ffffff;
+  background: #666666;
+  position: fixed;
+  border-top: 10px solid #4aaaa5;
+  bottom: 0; 
+  left: 0; 
+}
+
+footer .container {
+  text-align: center;
+  color: #ffffff;
+}
+
+/* needed to change font color */
+.navbar-b-custom {
+  color: #ffffff;
+  /* border-bottom: 3px;
+  border-color: #666666; */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  background-color: #4aaaa5;
+  padding: 10px;
+  margin: auto;
+}
+
+
+.content {
+  max-width: 960px;
+  margin-top: 50px;
+}
+
+#me {
+  
+}
+
+@media (min-width: 768px){
+
+
+  nav .container {
+    max-width: 960px;
+    padding: 0;
+    
+  }
+  .content {
+    margin-top: 70px;
+  }
+} 
