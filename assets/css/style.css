@@ -4,7 +4,6 @@ body {
   background-image: url('../images/light-grey-terrazzo.png');
 }
 
-
 h1,
 h2,
 h3,
@@ -17,6 +16,10 @@ nav {
   height: 50px;
 }
 
+h2 {
+  color: #4aaaa5;
+}
+
 
 footer {
   width: 100%;
@@ -27,6 +30,10 @@ footer {
   border-top: 10px solid #4aaaa5;
   bottom: 0; 
   left: 0; 
+}
+
+form {
+  padding-bottom: 10px;
 }
 
 footer .container {
@@ -48,18 +55,93 @@ footer .container {
   margin: auto;
 }
 
+.navbar ul.navbar-nav li.nav-item a.nav-link {
+  background-color: #f9f9f9;
+}
 
+/* Controls main Content*/
 .content {
   max-width: 960px;
   margin-top: 50px;
+  margin-bottom: 50px;
+  border: 2px solid #dddddd;
 }
 
+.page {
+  margin: 0;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn-variant {
+background-color: #4aaaa5;
+color: #ffffff;
+}
+
+.btn-variant:hover {
+  background-color: #33767e;
+}
+
+/* Portfolio image divs */
+.project {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+}
+
+/* Overlay to porfolio images */
+.overlay {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  color: #ffffff;
+  background-color: #4aaaa5;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* background images for projects */
+.rpg {
+  background-image: url(../images/rpg.jpeg);
+  background-size: 100%;
+}
+
+.hangman {
+  background-image: url(../images/hangman.png);
+  background-size: 100%;
+}
+
+.trivia {
+  background-image: url(../images/trivia.jpg);
+  background-size: 100%;
+}
+
+.rutgers {
+  background-image: url(../images/rutgers.PNG);
+  background-size: 100%;
+}
+
+.rpsls {
+  background-image: url(../images/RPSLS.png);
+  background-size: 100%;
+}
+
+
+/* controls picture in About Me */
 #me {
-  
+  margin-bottom: 10px;
+  float: left;
+  padding-right: 10px;
 }
 
 @media (min-width: 768px){
-
+  p {
+    margin-left: 20px;
+  }
 
   nav .container {
     max-width: 960px;
@@ -68,5 +150,20 @@ footer .container {
   }
   .content {
     margin-top: 70px;
+    
   }
-} 
+
+  #me {
+    width: 350px;
+    height: 200px;
+    padding-left: 20px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .project {
+    display: block;
+    margin: 10px auto 10px auto;
+  }
+}
